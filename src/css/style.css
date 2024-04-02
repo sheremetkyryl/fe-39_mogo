@@ -58,6 +58,15 @@ body {
 .service-title {
   font-variant: small-caps;
 }
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  justify-content: space-between;
+}
+.service {
+  max-width: 330px;
+}
 .service-text {
   color: var(--colorTextSecondary);
   font-family: var(--fontTextSecondary);
