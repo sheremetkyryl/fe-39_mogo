@@ -67,11 +67,16 @@ body {
 .service {
   max-width: 330px;
 }
+.service-heading {
+  display: flex;
+  gap: 20px;
+}
 .service-text {
   color: var(--colorTextSecondary);
   font-family: var(--fontTextSecondary);
   font-size: 15px;
   line-height: 1.47; /* 146.667% */
+  padding-left: 57px;
 }
 /*========================TEAM===============================================*/
 .team {
