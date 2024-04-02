@@ -94,6 +94,10 @@ body {
   font-family: var(--fontTextSecondary);
   font-size: 15px;
 }
+.team-members {
+  display: flex;
+  gap: 30px;
+}
 .teammete-name {
   font-variant: all-small-caps;
   text-align: center;
@@ -111,8 +115,19 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer-info {
   color: var(--colorHover);
+}
+.subscribe {
+  display: flex;
+}
+.subscribe-mail {
+  padding: 12px 10px;
 }
 .subscribe-mail::placeholder {
   color: var(--colorTextSecondary);
@@ -128,4 +143,6 @@ body {
   font-size: 14px;
   font-weight: 700;
   font-variant: all-small-caps;
+  padding: 12px 38px;
+  background-color: var(--colorTextTertiary);
 }
