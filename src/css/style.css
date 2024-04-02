@@ -39,6 +39,11 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
 .nav-link {
   color: var(--colorTextTertiary);
 }
@@ -54,6 +59,7 @@ body {
   font-weight: 700;
   font-variant: all-small-caps;
   text-align: center;
+  margin-bottom: 65px;
 }
 .service-title {
   font-variant: small-caps;
@@ -87,20 +93,26 @@ body {
   font-weight: 700;
   font-variant: all-small-caps;
   text-align: center;
+  margin-bottom: 45px;
 }
 .team-text {
   color: var(--colorTextSecondary);
   text-align: center;
   font-family: var(--fontTextSecondary);
   font-size: 15px;
+  margin-bottom: 27px;
 }
 .team-members {
   display: flex;
   gap: 30px;
 }
+.teammete-photo {
+  margin-bottom: 30px;
+}
 .teammete-name {
   font-variant: all-small-caps;
   text-align: center;
+  margin-bottom: 11px;
 }
 .teammete-role {
   color: var(--colorTextSecondary);
