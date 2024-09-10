@@ -23,6 +23,12 @@ body {
   margin-right: auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
 /*=======================HEADER=========================================*/
 .header {
   padding-top: 17px;
@@ -64,13 +70,15 @@ body {
 .service-title {
   font-variant: small-caps;
 }
-.services-cards {
+.services-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 70px;
   row-gap: 100px;
   justify-content: space-between;
 }
-.service {
+.services-item {
+  flex-basis: calc((100% - 140px) / 3);
   max-width: 330px;
 }
 .service-heading {
@@ -124,13 +132,14 @@ body {
 }
 /*========================FOOTER===============================================*/
 .footer {
-  padding-top: 10px;
   padding-bottom: 10px;
 }
 .footer-container {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid var(--colorTextSecondary);
 }
 .footer-info {
   color: var(--colorHover);
@@ -140,6 +149,8 @@ body {
 }
 .subscribe-mail {
   padding: 12px 10px;
+  border: 1px solid var(--colorTextSecondary);
+  border-right: 0;
 }
 .subscribe-mail::placeholder {
   color: var(--colorTextSecondary);
