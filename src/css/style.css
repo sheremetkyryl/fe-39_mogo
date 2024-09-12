@@ -8,6 +8,10 @@
   --fontTextPrimary: "Montserrat", sans-serif;
   --fontTextSecondary: "Roboto", sans-serif;
 }
+
+
+
+
 /*=======================GLOBAL=========================================*/
 body {
   font-family: var(--fontTextPrimary);
@@ -17,6 +21,7 @@ body {
 }
 .container {
   max-width: 1230px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -55,6 +60,28 @@ img {
 }
 .nav-link:hover {
   color: var(--colorHover);
+}
+
+.header-menu {
+  display: none;
+}
+@media (max-width:1199px) {
+  .header {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-list {
+    gap: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .nav-list {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
 }
 /*========================SERVICES===============================================*/
 .services {
@@ -96,12 +123,65 @@ img {
   display: flex;
   gap: 20px;
 }
+.service-photo {
+  display: block;
+}
 .service-text {
   color: var(--colorTextSecondary);
   font-family: var(--fontTextSecondary);
   font-size: 15px;
   line-height: 1.47; /* 146.667% */
   padding-left: 57px;
+}
+
+@media (max-width: 1199) {
+  .service-title {
+    margin-bottom: 85px;
+  }
+}
+
+@media (max-width: 991px) {
+  .service-title {
+    margin-bottom: 70px;
+  }
+  .services-item {
+    flex-basis: calc((100% - 1px) / 2);
+  }
+  .services-list {
+    row-gap: 70px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    padding-bottom: 70px;
+  }
+  .service-title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .services {
+    flex-basis: 100%;
+  }
+
+  .service-heading {
+    flex-direction: row;
+    align-items: center;
+  }
+  .services-title::after {
+    display: none;
+  }
+  .service-title {
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+  .service-text {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 /*========================TEAM===============================================*/
 .team {
@@ -152,6 +232,35 @@ img {
   font-style: italic;
   font-weight: 300;
 }
+
+@media (max-width: 991px) {
+  .team-title {
+    margin-bottom: 70px;
+  }
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .team {
+    padding-bottom: 70px;
+  }
+  .team-title {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .teammete-name {
+    font-size: 2em;
+  }
+  .teammate-role {
+    font-size: 2em;
+  }
+}
 /*========================FOOTER===============================================*/
 .footer {
   padding-bottom: 10px;
@@ -190,4 +299,22 @@ img {
   font-variant: all-small-caps;
   padding: 12px 38px;
   background-color: var(--colorTextTertiary);
+}
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .subscribe {
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: stretch;
+  }
+  .subscribe-mail {
+    border: 1px solid var(--colorTextSecondary);
+    border-bottom: none;
+  }
 }
